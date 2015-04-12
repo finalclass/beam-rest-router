@@ -6,7 +6,6 @@ var to5 = require('gulp-babel');
 var sourcemaps = require('gulp-sourcemaps');
 var paths = require('../paths');
 var compilerOptions = require('../babel-options');
-var assign = Object.assign || require('object.assign');
 
 //transpiles changed es6 server files to SystemJS format
 gulp.task('build-src', function () {
