@@ -2,7 +2,7 @@
   "name": "beam-rest-router",
   "version": "0.0.0",
   "description": "REST router for BEAM stack",
-  "main": "index.js",
+  "main": "dest/index.js",
   "scripts": {
     "test": "jasmine-node test/"
   },
@@ -19,5 +19,19 @@
   "bugs": {
     "url": "https://github.com/finalclass/beam-rest-router/issues"
   },
-  "homepage": "https://github.com/finalclass/beam-rest-router"
+  "homepage": "https://github.com/finalclass/beam-rest-router",
+  "devDependencies": {
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-babel": "^5.1.0",
+    "gulp-changed": "^1.2.1",
+    "gulp-jasmine": "^2.0.1",
+    "gulp-jshint": "^1.10.0",
+    "gulp-plumber": "^1.0.0",
+    "gulp-sourcemaps": "^1.5.1",
+    "gulp-yuidoc": "^0.1.2",
+    "jshint-stylish": "^1.0.1",
+    "run-sequence": "^1.0.2",
+    "vinyl-paths": "^1.0.0"
+  }
 }
