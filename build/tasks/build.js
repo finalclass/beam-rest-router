@@ -24,7 +24,7 @@ gulp.task('build-test', function () {
     .pipe(plumber())
     .pipe(changed(paths.test.dest, {extension: '.js'}))
     .pipe(sourcemaps.init())
-    .pipe(to5(assign({}, compilerOptions, {modules: 'common'})))
+    .pipe(to5(compilerOptions))
     .pipe(sourcemaps.write({includeContent: false, sourceRoot: '/' + paths.test.sourceRoot}))
     .pipe(gulp.dest(paths.test.dest));
 });
