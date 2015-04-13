@@ -83,7 +83,9 @@ describe('restRouter', () => {
       .expect(200)
       .end((err, res) => {
         if (err) return done(err);
-        expect(res.body).toEqual(data);
+        expect(res.body[0].name).toBe('Genesis');
+        expect(res.body[1].name).toBe('Exodus');
+        expect(res.body[2].name).toBe('Leviticus');
         done();
       });
   });
