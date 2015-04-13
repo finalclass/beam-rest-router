@@ -30,6 +30,23 @@ function restRouter({model}) {
     });
   });
 
+  router.put('/:id', (req, res, next) => {
+    delete req.body._id;
+    req.record.update({$set: req.body}, (err, record) => {
+      if (err) return next(err);
+      model.findOne(req.params.id, (err, record) => {
+        if (err) return next(err);
+        res.json(record);
+      });
+    });
+  });
+
+  router.delete('/:id', (req, res, next) => {
+    req.record.remove((...args) => {
+      res.status(204).end();
+    });
+  });
+
   return router;
 }
 
