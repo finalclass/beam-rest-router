@@ -2,7 +2,7 @@
   "name": "beam-rest-router",
   "version": "0.1.0",
   "description": "REST router for BEAM stack",
-  "main": "dest/restRouter.js",
+  "main": "dist/restRouter.js",
   "scripts": {
     "test": "gulp test"
   },
