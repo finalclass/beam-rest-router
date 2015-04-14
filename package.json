@@ -1,6 +1,6 @@
 {
   "name": "beam-rest-router",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "REST router for BEAM stack",
   "main": "dest/restRouter.js",
   "scripts": {
