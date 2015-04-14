@@ -1,7 +1,6 @@
 import express from 'express';
 
-function restRouter({model}) {
-  let router = express.Router();
+function restRouter({model, router = express.Router()}) {
 
   router.param('id', (req, res, next) => {
     model.findOne(req.params.id, (err, record) => {
